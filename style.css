@@ -1,49 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
-/*The @import rule allows you to import a style sheet into another style sheet. The @import rule must be at the top of the document (but after any @charset declaration). The @import rule also supports media queries, so you can allow the import to be media-dependent.*/
+/*A regra @import deixa você importar um style sheet dentro de outro Css e deve estar dentro de outro documento. Ela também suporta mídias dependentes*/
 
 *{
-/*The selector universal in CSS (*), also known as the asterisk selector, applies styles to elements of any type. This means that any element selected using the asterisk selector will have the styles assigned to it in the CSS stylesheet.*/
+/*O seletor universal do Css é (*) ele aplica estilos a qualquer tipo de elemento*/
     margin: 0;
-/*0 auto is a CSS property that sets the top and bottom margins of an element to 0 and centers it horizontally within its parent element. This technique is often used to center a block-level element such as a div or a image.*/
+/*0 auto é uma propriedade CSS que define as margens superior e inferior de um elemento como 0 e centraliza-o horizontalmente em seu elemento pai. Esta técnica é frequentemente usada para centralizar um elemento em nível de bloco, como um div ou uma imagem.*/
     padding: 0;
-/*The padding property in CSS defines the innermost portion of the box model, creating space around an element's content, inside of any defined margins and/or borders. Padding values are set using lengths or percentages, and cannot accept negative values. The initial, or default, value for all padding properties is 0*/
+/*A propriedade padding em CSS define a parte mais interna do modelo de caixa, criando espaço ao redor do conteúdo de um elemento, dentro de quaisquer margens e/ou bordas definidas. Os valores de preenchimento são definidos usando comprimentos ou porcentagens e não podem aceitar valores negativos. O valor inicial ou padrão para todas as propriedades de preenchimento é 0
+*/
     box-sizing: border-box;
-/*The box-sizing CSS property sets how the total width and height of an element is calculated.*/
+/*A propriedade CSS box-sizing define como a largura e altura totais de um elemento são calculadas
+.*/
     text-decoration: none;
-/*It is mainly used for underlining, striking through, or adding a line above or below the text. This will underline all the paragraphs in the HTML document. There are other values that can be used for the text-decoration property, such as none, line-through, overline, underline, and blink.*/
+/*É usado principalmente para sublinhar, riscar ou adicionar uma linha acima ou abaixo do texto. Isso sublinhará todos os parágrafos do documento HTML. Existem outros valores que podem ser usados ​​para a propriedade text-decoration, como nenhum, line-through, overline, underline e blink.
+*/
     border: none;
-/*The CSS border properties allow you to specify the style, width, and color of an element's border.*/
+/*As propriedades da borda CSS permitem especificar o estilo, a largura e a cor da borda de um elemento
+.*/
     outline: none;
-/*The CSS outline properties draw a border around an element that does not affect layout, making it ideal for highlighting. This covers the outline shorthand, as well as outline-width, outline-style, outline-color and outline-offset.*/
+/*As propriedades de contorno CSS desenham uma borda ao redor de um elemento que não afeta o layout, tornando-o ideal para realce. Isso cobre a abreviatura do contorno, bem como a largura do contorno, o estilo do contorno, a cor do contorno e o deslocamento do contorno.
+*/
     font-family: 'Poppins', sans-serif;
-/*The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.*/
+/*A propriedade CSS font-family especifica uma lista priorizada de um ou mais nomes de famílias de fontes e/ou nomes de famílias genéricos para o elemento selecionado
+.*/
 }
 
 html{
     font-size: 62.5%;
-/*font-size is the CSS property that controls the size of text on a webpage. There are several values you can use to define the font-size property.*/
+/*font-size é a propriedade CSS que controla o tamanho do texto em uma página web. Existem vários valores que você pode usar para definir a propriedade font-size.*/
 }
 
 body{
     width:100%;
-/*The width CSS property sets an element's width. By default, it sets the width of the content area, but if box-sizing is set to border-box, it sets the width of the border area.*/
-    height: 100vh;
-/*The height CSS property specifies the height of an element. By default, the property defines the height of the content area. If box-sizing is set to border-box, however, it instead determines the height of the border area*/
-    overflow-x: hidden;
-/*The overflow-x CSS property sets what shows when content overflows a block-level element's left and right edges. This may be nothing, a scroll bar, or the overflow content.*/
-    background-color: rgb(36, 36, 36);
-/*The background-color property sets the background color of an element. The background of an element is the total size of the element, including padding and border (but not the margin). Tip: Use a background color and a text color that makes the text easy to read.*/
-    color: white;
-/*The color CSS property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color*/
+/*A propriedade CSS width define a largura de um elemento. Por padrão, ele define a largura da área de conteúdo, mas se o tamanho da caixa estiver definido como border-box, ele define a largura da área da borda.*/
+height: 100vh;
+/*A propriedade CSS height especifica a altura de um elemento. Por padrão, a propriedade define a altura da área de conteúdo. Se box-sizing estiver definido como border-box, entretanto, ele determinará a altura da área da borda*/
+overflow-x: hidden;
+/*A propriedade CSS overflow-x define o que é mostrado quando o conteúdo ultrapassa as bordas esquerda e direita de um elemento no nível do bloco. Pode ser nada, uma barra de rolagem ou conteúdo excedente.*/
+background-color: rgb(36, 36, 36);
+/*A propriedade background-color define a cor de fundo de um elemento. O plano de fundo de um elemento é o tamanho total do elemento, incluindo preenchimento e borda (mas não a margem). Dica: use uma cor de fundo e uma cor de texto que facilite a leitura do texto.*/
+color: white;
+/*A propriedade CSS color define o valor da cor de primeiro plano do texto e das decorações de texto de um elemento e define o valor currentcolor. currentcolor pode ser usado como um valor indireto em outras propriedades e é o padrão para outras propriedades de cores, como border-color*/
 }
 
 header{
     margin-top: 20px;
-/*The margin-top CSS property sets the margin area on the top of an element. A positive value places it farther from its neighbors, while a negative value places it closer.*/
-    position: fixed;
+/*A propriedade CSS margin-top define a área de margem no topo de um elemento. Um valor positivo o coloca mais distante de seus vizinhos, enquanto um valor negativo o coloca mais próximo.*/
+position: fixed;
 /*
-The CSS position property defines the position of an element in a document. This property works with the left, right, top, bottom and z-index properties to determine the final position of an element on a page.*/
-    top: 0;
+A propriedade position CSS define a posição de um elemento em um documento. Esta propriedade funciona com as propriedades esquerda, direita, superior, inferior e índice z para determinar a posição final de um elemento em uma página.*/
+top: 0;
 /*The top CSS property sets the vertical position of a positioned element.*/
     left: 0;
 /*The left CSS property participates in specifying the horizontal position of a positioned element.*/
